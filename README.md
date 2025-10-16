@@ -35,3 +35,11 @@ docker export <container_id> -o container.tar
 ```bash
 trivy fs --skip-update --db-repository ghcr.io/aquasecurity/trivy-db:2 container.tar
 ```
+# Import the exported container tarball:
+```bash
+docker import container.tar chrome:latest
+```
+# Scan it as an image:
+```bash
+trivy image --skip-update --db-repository ghcr.io/aquasecurity/trivy-db:2(*THESE ARE VERSION NUMBERS) chrome:latest
+```
