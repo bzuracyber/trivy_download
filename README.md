@@ -49,3 +49,4 @@ docker import container.tar chrome:latest
 ```bash
 trivy image --skip-update --db-repository ghcr.io/aquasecurity/trivy-db:2(*THESE ARE VERSION NUMBERS) chrome:latest
 ```
+download the latest WSL update package (wsl_update_x64.msi) directly from Microsoft’s GitHub releases: 👉 https://github.com/microsoft/WSL/releases
