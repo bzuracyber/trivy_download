@@ -4,6 +4,12 @@ https://github.com/aquasecurity/trivy/releases/tag/v0.67.2
 # Docker Desktop Download
 https://docs.docker.com/desktop/setup/install/windows-install/
 
+# Redownload
+```bash
+docker pull ghcr.io/aquasecurity/trivy-db:2
+docker save ghcr.io/aquasecurity/trivy-db:2 -o trivy-db-docker.tar
+```
+
 # Pull Trivy Vulnerability DBs
 ```bash
 docker pull ghcr.io/aquasecurity/trivy-db:2
